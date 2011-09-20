@@ -117,3 +117,6 @@ persist.vendor.radio.hw_mbn_update=0
 ro.sensor.proximity=true
 ro.sensor.pocket=xiaomi.sensor.pocket
 ro.sensor.pickup=xiaomi.sensor.pickup
+
+# Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
+ro.telephony.call_ring.multiple=false
