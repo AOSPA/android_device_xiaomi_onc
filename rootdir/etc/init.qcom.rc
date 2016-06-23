@@ -529,6 +529,8 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
 
 service cnss-daemon /vendor/bin/cnss-daemon -n -l
     class late_start
+    user system
+    group system inet net_admin wifi
 
 service loc_launcher /vendor/bin/loc_launcher
     class late_start
