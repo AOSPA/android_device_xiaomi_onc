@@ -527,6 +527,14 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
 
+# Data Migration
+service vendor.move_wifi_data /system/bin/move_wifi_data.sh
+    class main
+    user wifi
+    group wifi
+    disabled
+    oneshot
+
 service cnss-daemon /vendor/bin/cnss-daemon -n -l
     class late_start
     user system
