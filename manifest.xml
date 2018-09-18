@@ -392,4 +392,16 @@
         <transport>hwbinder</transport>
         <fqname>@2.1::IRTPService/imsrtpservice</fqname>
     </hal>
+    <!-- SCVE Panorama hal services -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.scve.panorama</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPanoramaTracking/panoTracking</fqname>
+        <fqname>@1.0::IPanoramaStitching/panoStitching</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.scve.objecttracker</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IObjectTracker/objectTracker</fqname>
+    </hal>
 </manifest>
