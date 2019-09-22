@@ -23,6 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.chk.cal.us=0 \
     vendor.audio.dolby.ds2.enabled=false \
     vendor.audio.dolby.ds2.hardbypass=false \
+    vendor.audio.feature.a2dp_offload.enable=false \
     vendor.audio.flac.sw.decoder.24bit=true \
     vendor.audio.hw.aac.encoder=true \
     vendor.audio.offload.buffer.size.kb=64 \
