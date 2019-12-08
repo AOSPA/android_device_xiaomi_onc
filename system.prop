@@ -126,3 +126,6 @@ persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
+
+# Force wifi interface for wlan0
+wifi.interface=wlan0
