@@ -4971,8 +4971,7 @@ esac
 
 case "$target" in
 	"kona")
-
-        rev=`cat /sys/devices/soc0/revision`
+	rev=`cat /sys/devices/soc0/revision`
 	ddr_type=`od -An -tx /proc/device-tree/memory/ddr_device_type`
 	ddr_type4="07"
 	ddr_type5="08"
