@@ -115,6 +115,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.mode=concurrent \
     ro.vendor.use_data_netmgrd=true
 
+# ParanoidDoze
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pocket=xiaomi.sensor.pocket \
+    ro.sensor.pickup=xiaomi.sensor.pickup
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
