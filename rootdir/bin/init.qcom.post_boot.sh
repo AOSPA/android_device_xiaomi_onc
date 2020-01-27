@@ -4953,13 +4953,13 @@ case "$target" in
 
                 #setting max gpu freq to 530 MHz
                 echo 3 > /sys/class/kgsl/kgsl-3d0/max_pwrlevel
-                echo {class:ddr, res:fixed, val: 1804} > /sys/kernel/debug/aop_send_message
+                echo {class:ddr, res:capped, val: 1804} > /sys/kernel/debug/aop_send_message
         elif [ $feature_id == 1 ]; then
                 echo "feature_id is 1 for SA8195P"
 
                 #setting max gpu freq to 670 MHz
                 echo 0 > /sys/class/kgsl/kgsl-3d0/max_pwrlevel
-                echo {class:ddr, res:fixed, val: 2092} > /sys/kernel/debug/aop_send_message
+                echo {class:ddr, res:capped, val: 2092} > /sys/kernel/debug/aop_send_message
         else
                 echo "unknown feature_id value" $feature_id
         fi
