@@ -211,6 +211,7 @@ on boot
 
 # access permission for DT2W
     chown system system /dev/input/event2
+    chmod 0660 /dev/input/event2
 
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
