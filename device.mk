@@ -232,7 +232,6 @@ TARGET_COMMON_QTI_COMPONENTS := av bt perf telephony wfd-legacy
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.msm.usb.configfs.rc \
     init.onc.rc \
     init.qcom.rc \
     init.qcom.sh \
