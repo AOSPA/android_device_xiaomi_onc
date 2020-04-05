@@ -196,10 +196,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
-# IPA Manager
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
+# IPACM Data
+include $(TOPDIR)vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk
 
 # IR
 PRODUCT_PACKAGES += \
