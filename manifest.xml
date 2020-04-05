@@ -167,6 +167,11 @@
         <fqname>@1.1::IHostapd/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.wifi.offload</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOffload/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.wifi.supplicant</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ISupplicant/default</fqname>
