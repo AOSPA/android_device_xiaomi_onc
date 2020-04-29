@@ -265,7 +265,7 @@ PRODUCT_PACKAGES += \
     libjson
 
 # QTI common
-TARGET_COMMON_QTI_COMPONENTS := bt
+TARGET_COMMON_QTI_COMPONENTS := bt telephony
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -292,8 +292,6 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.1 \
     android.hardware.secure_element@1.0 \
     librmnetctl \
     libcnefeatureconfig \
@@ -338,8 +336,7 @@ PRODUCT_PACKAGES += \
 
 # Whitelisted app
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
-    $(LOCAL_PATH)/configs/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml
+    $(LOCAL_PATH)/configs/privapp-permissions-qti-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-qti-product.xml
 
 # Wifi
 PRODUCT_PACKAGES += \
