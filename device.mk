@@ -172,8 +172,7 @@ PRODUCT_PACKAGES += \
     libfmjni
 
 # GPS
-include $(TOPDIR)hardware/qcom/gps/gps_vendor_board.mk
-include $(TOPDIR)hardware/qcom/gps/gps_vendor_product.mk
+$(call inherit-product, hardware/qcom/gps/gps_vendor_product.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -203,7 +202,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
 # IPACM Data
-include $(TOPDIR)vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk
+$(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
 
 # IR
 PRODUCT_PACKAGES += \
@@ -263,7 +262,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Properties
--include device/xiaomi/onc/vendor_prop.mk
+$(call inherit-product, device/xiaomi/onc/vendor_prop.mk)
 
 # QMI
 PRODUCT_PACKAGES += \
