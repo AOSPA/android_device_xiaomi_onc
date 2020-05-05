@@ -119,7 +119,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     libbluetooth_qti \
-    libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0 \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
