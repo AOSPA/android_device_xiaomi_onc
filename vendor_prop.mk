@@ -1,16 +1,11 @@
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.bluetooth.a2dp_offload.disabled=false \
-    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
-    persist.vendor.bt.aac_frm_ctl.enabled=true \
-    persist.vendor.bt.enable.splita2dp=true \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
-    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
-    ro.bluetooth.a2dp_offload.supported=true \
+    bluetooth.hfp.client=1 \
+    persist.vendor.bt.enable.splita2dp=false \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
     ro.bluetooth.library_name=libbluetooth_qti.so \
-    vendor.qcom.bluetooth.soc=pronto \
-    vendor.bluetooth.soc=pronto
+    ro.vendor.bluetooth.wipower=false \
+    vendor.qcom.bluetooth.soc=pronto
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
