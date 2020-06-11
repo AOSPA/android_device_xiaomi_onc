@@ -185,10 +185,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.diag_mdlog_enable=false
 
-# Wifi-display
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.wfd.enable=1
-
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.emmc_size=16GB \
