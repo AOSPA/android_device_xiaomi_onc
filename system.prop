@@ -51,6 +51,11 @@ persist.vendor.btstack.avrcp-playstatus.blacklist=true
 # System property for cabl
 ro.vendor.display.cabl=0
 
+ro.vendor.display.svi=1
+ro.vendor.display.sensortype=2
+vendor.display.svi.config=1
+vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+
 #
 # System props for telephony
 # System prop to turn on CdmaLTEPhone always
