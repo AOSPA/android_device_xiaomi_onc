@@ -68,7 +68,7 @@ persist.debug.wfd.enable=1
 persist.hwc.enable_vds=1
 
 #selects Console configuration to enable
-persist.console.silent.config=1
+persist.vendor.console.silent.config=1
 
 #property to enable narrow search range for video encoding
 vendor.vidc.enc.disable_bframes=1
