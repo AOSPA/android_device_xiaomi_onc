@@ -2,7 +2,6 @@
 # vendor.prop for onc
 #
 
-debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 vendor.vidc.enc.disable.pq=true
 vendor.vidc.disable.split.mode=1
