@@ -44,6 +44,7 @@ persist.vendor.data.mode=concurrent
 
 #system prop for Bluetooth SOC type
 ro.bluetooth.library_name=libbluetooth_qti.so
+persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.btstack.enable.splita2dp=false
 #add by zhufanghua for enable play status blacklist
 persist.vendor.btstack.avrcp-playstatus.blacklist=true
