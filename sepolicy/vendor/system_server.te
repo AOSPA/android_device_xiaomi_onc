@@ -8,3 +8,6 @@ r_dir_file(system_server, keylayout_file);
 get_prop(system_server, fp_prop);
 
 dontaudit system_server vfat:dir r_dir_perms;
+
+# Allow Cast Settings to access WFD prop
+get_prop(system_server, wfd_debug_prop)
