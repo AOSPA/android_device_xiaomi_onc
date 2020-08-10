@@ -289,11 +289,6 @@ PRODUCT_PACKAGES += \
 # USB HAL
 $(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
-
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
