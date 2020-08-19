@@ -79,7 +79,6 @@ AUDIO_SDK_FLUENCETYPE := fluence
 $(call inherit-product, hardware/qcom/audio/configs/msm8953/msm8953.mk)
 
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
@@ -99,12 +98,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
-    liba2dpoffload \
     libbluetooth_qti \
     libbtconfigstore \
-    libhdmiedid \
-    libhfp \
-    libsndmonitor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
@@ -113,12 +108,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     libgui_vendor \
-    libstdc++.vendor \
-    Snap
-
-# Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.1-service
+    libstdc++.vendor
 
 # Display
 PRODUCT_PACKAGES += \
@@ -132,8 +122,6 @@ PRODUCT_PACKAGES += \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
-    liboverlay \
-    libgenlock \
     libtinyxml \
     vendor.display.config@1.9
 
@@ -147,17 +135,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.2-service.clearkey
-
-# Ebtables
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
-
-# FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
 
 # GPS
 $(call inherit-product, hardware/qcom/gps/gps_vendor_product.mk)
@@ -221,7 +198,6 @@ PRODUCT_COPY_FILES += \
 
 # Netutils
 PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0 \
     android.system.net.netd@1.0 \
     libandroid_net
 
@@ -234,7 +210,6 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
@@ -267,7 +242,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.qcom.bt.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     move_time_data.sh \
@@ -321,12 +295,9 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libcld80211 \
     libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
-    dhcpcd.conf \
     wcnss_service \
-    wificond \
     wpa_supplicant \
     wpa_supplicant.conf
 
