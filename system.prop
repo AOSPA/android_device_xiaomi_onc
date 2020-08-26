@@ -130,3 +130,7 @@ persist.vendor.ims.disableQXDMLogs=1
 
 # Force wifi interface for wlan0
 wifi.interface=wlan0
+
+# Default app/sf phase offset
+ro.surface_flinger.vsync_event_phase_offset_ns=2000000
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
