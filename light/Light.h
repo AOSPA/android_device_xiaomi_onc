@@ -20,6 +20,7 @@
 #include <android/hardware/light/2.0/ILight.h>
 #include <hardware/lights.h>
 #include <hidl/Status.h>
+
 #include <map>
 #include <mutex>
 #include <vector>
@@ -32,7 +33,7 @@ using ::android::hardware::light::V2_0::LightState;
 using ::android::hardware::light::V2_0::Status;
 using ::android::hardware::light::V2_0::Type;
 
-typedef void (*LightStateHandler)(const LightState&);
+typedef void (*LightStateHandler)(const LightState &);
 
 struct LightBackend {
     Type type;
@@ -52,7 +53,7 @@ namespace implementation {
 
 class Light : public ILight {
   public:
-    Return<Status> setLight(Type type, const LightState& state) override;
+    Return<Status> setLight(Type type, const LightState &state) override;
     Return<void> getSupportedTypes(getSupportedTypes_cb _hidl_cb) override;
 
   private:
