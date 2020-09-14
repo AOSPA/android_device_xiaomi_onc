@@ -21,10 +21,9 @@
 #include <sys/_system_properties.h>
 
 #include <sys/sysinfo.h>
-#include "property_service.h"
 #include "vendor_init.h"
 
-using android::init::property_set;
+using android::base::SetProperty;
 using std::string;
 
 void property_override(string prop, string value) {
@@ -52,20 +51,20 @@ void set_dalvik_properties() {
 
     if (sys.totalram > 3072ull * 1024 * 1024) {
         // Set for 4GB RAM
-        property_set("dalvik.vm.heapstartsize", "8m");
-        property_set("dalvik.vm.heapgrowthlimit", "192m");
-        property_set("dalvik.vm.heapsize", "512m");
-        property_set("dalvik.vm.heaptargetutilization", "0.6");
-        property_set("dalvik.vm.heapmaxfree", "16m");
-        property_set("dalvik.vm.heapminfree", "8m");
+        SetProperty("dalvik.vm.heapstartsize", "8m");
+        SetProperty("dalvik.vm.heapgrowthlimit", "192m");
+        SetProperty("dalvik.vm.heapsize", "512m");
+        SetProperty("dalvik.vm.heaptargetutilization", "0.6");
+        SetProperty("dalvik.vm.heapmaxfree", "16m");
+        SetProperty("dalvik.vm.heapminfree", "8m");
     } else {
         // Set for 2/3GB RAM
-        property_set("dalvik.vm.heapstartsize", "8m");
-        property_set("dalvik.vm.heapgrowthlimit", "192m");
-        property_set("dalvik.vm.heapsize", "512m");
-        property_set("dalvik.vm.heaptargetutilization", "0.75");
-        property_set("dalvik.vm.heapmaxfree", "8m");
-        property_set("dalvik.vm.heapminfree", "512k");
+        SetProperty("dalvik.vm.heapstartsize", "8m");
+        SetProperty("dalvik.vm.heapgrowthlimit", "192m");
+        SetProperty("dalvik.vm.heapsize", "512m");
+        SetProperty("dalvik.vm.heaptargetutilization", "0.75");
+        SetProperty("dalvik.vm.heapmaxfree", "8m");
+        SetProperty("dalvik.vm.heapminfree", "512k");
     }
 }
 
@@ -75,7 +74,7 @@ void set_avoid_gfxaccel_config() {
 
     if (sys.totalram <= 2048ull * 1024 * 1024) {
         // Reduce memory footprint
-        property_set("ro.config.avoid_gfx_accel", "true");
+        SetProperty("ro.config.avoid_gfx_accel", "true");
     }
 }
 
