@@ -272,8 +272,7 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service
 
 # USB HAL
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
+$(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
 # Vibrator
 PRODUCT_PACKAGES += \
