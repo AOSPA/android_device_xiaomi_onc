@@ -16,6 +16,9 @@
 
 $(call inherit-product, vendor/xiaomi/onc/onc-vendor.mk)
 
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 28
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
