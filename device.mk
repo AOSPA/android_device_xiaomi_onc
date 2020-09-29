@@ -284,6 +284,9 @@ PRODUCT_COPY_FILES += \
 # USB HAL
 $(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
+# Vibrator HAL
+$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
