@@ -16,7 +16,6 @@ debug.sf.hw=0
 debug.sf.latch_unsignaled=1
 dalvik.vm.heapsize=36m
 persist.demo.hdmirotationlock=false
-debug.sf.disable_backpressure=1
 
 #Property to enable display default color mode
 vendor.display.enable_default_color_mode=0
